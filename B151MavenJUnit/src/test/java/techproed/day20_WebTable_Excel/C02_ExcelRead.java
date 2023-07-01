@@ -60,11 +60,11 @@ public class C02_ExcelRead {
         System.out.println("3. Satir 1. Sütun bilgisi = "+satir3Sutun1);
         Assert.assertEquals("France",satir3Sutun1);
 
-        //Kullanılan satır sayısın bulun
+        //Kullanılan satır sayısın bulun(SAdece içi dolu olanları yazdırır arada ki boş satırları saymaz)
         System.out.println("Kullanılan Satir Sayisi : "+workbook.getSheet("Sheet1").getPhysicalNumberOfRows());
         //NOT:getPhysicalNumberOfRows() methodu kullanılan yani içi dolu olan satırların sayısını verir.Index 1 den başlar
 
-        //Sayfadaki satır sayısını yazdırınız
+        //Sayfadaki satır sayısını yazdırınız(İlk ve son satır arasındaki boş satırları da sayar
         System.out.println("Sayfadaki Satir Sayisi : "+workbook.getSheet("Sheet1").getLastRowNum());
         //NOT:getLastRowNum() methodu sayfadaki son satırın sıra numarasını verir ve index 0(sıfır) dan başlar
 

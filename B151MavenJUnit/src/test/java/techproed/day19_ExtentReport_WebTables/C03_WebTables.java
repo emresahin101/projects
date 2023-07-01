@@ -47,7 +47,7 @@ public class C03_WebTables extends TestBase {
         WebElement besinciBaslik = driver.findElement(By.xpath("(//thead)[1]//th[5]"));
         System.out.println(besinciBaslik.getText());//-->5. sütun başlığı
         List<WebElement> besinciSutun = driver.findElements(By.xpath("(//tbody)[1]//td[5]"));
-        besinciSutun.forEach(t-> System.out.println(t.getText()));
+        besinciSutun.forEach(t-> System.out.println(t.getText()));//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         extentTest.info("5. Sütun verileri yazdırıldı");
 
         //    Task 5 : 3. Satırdaki 1. ve 2. sütun bilgilerini yazdırınız
