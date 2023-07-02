@@ -33,7 +33,9 @@ public class C01_Faker extends TestBase {
 
         Faker faker = new Faker();
 
-        String email = faker.internet().emailAddress();
+        String email = faker.internet().emailAddress(); //Kayıt olurken emaili 2 kere girmemiz gerekiyor doğrulama yapmak için
+        //O yüzden önce emaili burda değişkene atadık onu 2. de kullanabilelim diye faker her seferinde değişik veriyor o
+        //yüzden ve emaili üretebilmemiz için öncesinde internet() metodunu kullanmamız lazım!!!!!!!!!!!!!!!!!!
 
         Actions actions = new Actions(driver);
 
